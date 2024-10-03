@@ -4,6 +4,7 @@
 // import Header from "./components/Header";
 // import TodoList from "./components/TodoList";
 import Parent from "./components/Parent";
+import State from "./components/State";
 export default function App() {
 //   const todos = [{id:1, task: 'Learn React', completed: false},
 //     {id:2, task: 'Build Project', completed: true},
@@ -20,7 +21,9 @@ export default function App() {
 
 
 
-      <Parent/>
+      {/* <Parent/> */}
+
+      <State/>
     </>
   );
 }
