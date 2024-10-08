@@ -11,3 +11,14 @@ Currently, two official plugins are available:
 Explain evenets in React ?
 
 such as clicks, form submission, and input changes, are handled using functions attached to event props like onClick, onChange. etc
+
+
+class based lifecycle methods such as componentDidMount. componentDidUpdate, and componentWillunmount.
+
+Instead, these we can use useEffect hook.
+
+React Lifecycle.
+
+1. ComponentDidMount (Runs after the component Mounts)  
+2. ComponentDidUpdate ( Runs after every render/update)
+3. ComponentWillUnmount (Cleanup before the component unmounts)

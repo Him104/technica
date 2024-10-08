@@ -1,6 +1,6 @@
-// import Demo from "./components/Demo";
-
-// import Demo2 from "./components/Demo2";
+import Demo from "./components/Demo";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import Demo2 from "./components/Demo2";
 // import Header from "./components/Header";
 // import TodoList from "./components/TodoList";
 import Parent from "./components/Parent";
@@ -8,26 +8,27 @@ import State from "./components/State";
 import ControlledComponent from "./components/ControlledComponent";
 import Welcome from "./components/Welcome";
 export default function App() {
-//   const todos = [{id:1, task: 'Learn React', completed: false},
-//     {id:2, task: 'Build Project', completed: true},
-//     {id:3, task: 'Practcing DSA', completed: false}
-//   ];
+  //   const todos = [{id:1, task: 'Learn React', completed: false},
+  //     {id:2, task: 'Build Project', completed: true},
+  //     {id:3, task: 'Practcing DSA', completed: false}
+  //   ];
 
   return (
-    <>
+  <Router>
+<Routes>
 
-  {/* <Header title="My to-do List"/>
-    <Demo />
-   <Demo2 /> 
-      <TodoList todos={todos}/> */}
+      {/* <Header title="My to-do List"/> */}
+      <Route path="/" element={<h2>Home Page</h2>} />
+   <Route path="/demo"  element= { <Demo />} />
+   <Route path="/demo2"  element= {<Demo2 /> } />
+      {/* <TodoList todos={todos}/> */}
 
+   <Route path="/parent" element= {  <Parent />} />
+   <Route path="/state"  element= {  <State /> } />
+   <Route path="/controlledCom" element={  <ControlledComponent />}/>
+   <Route path="/welcome" element={   <Welcome />}/>
 
-
-      {/* <Parent/> */}
-
-      {/* <State/> */}
-      {/* <ControlledComponent/> */}
-      <Welcome/>
-    </>
+      </Routes>
+      </Router>
   );
 }
