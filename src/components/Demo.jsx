@@ -1,7 +1,17 @@
+import { useNavigate } from "react-router-dom";
+
 const Demo = () => {
   const handleClick = () => {
     alert("you clicked me");
   };
+
+const navigate = useNavigate();
+
+
+const handleNavigate = () => {
+  navigate('/parent')
+}
+
 
   return (
     <>
@@ -11,6 +21,8 @@ const Demo = () => {
       <button onClick={handleClick} className="border border-black p-2">
         Click Me
       </button>
+      <br/><br/>
+      <button onClick={handleNavigate} className="border border-gray-500 bg-orange-400">Go to Parent</button>
     </>
   );
 };

@@ -2,6 +2,8 @@ import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
+
 const ControlledComponent = () => {
   const [inputValue, setInputValue] = useState("");
   const [isValid, setIsValid] = useState(false);
@@ -19,6 +21,11 @@ const ControlledComponent = () => {
       toast.success(`data submitted : ${inputValue} `);
     }
   };
+
+
+  
+
+
 
   return (
     <div>
@@ -41,6 +48,7 @@ const ControlledComponent = () => {
           Submit
         </button>
       </form>
+
 
       <ToastContainer />
     </div>
