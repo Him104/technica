@@ -8,6 +8,8 @@ import State from "./components/State";
 import ControlledComponent from "./components/ControlledComponent";
 import Welcome from "./components/Welcome";
 import Location from "./components/Location";
+import Home from "./components/Home";
+import Profile from "./components/Profile";
 export default function App() {
   //   const todos = [{id:1, task: 'Learn React', completed: false},
   //     {id:2, task: 'Build Project', completed: true},
@@ -43,7 +45,7 @@ export default function App() {
       </nav>
       <Routes>
         {/* <Header title="My to-do List"/> */}
-        <Route path="/" element={<h2>Home Page</h2>} />
+        <Route path="/" element={<Home />} />
         <Route path="/demo" element={<Demo />} />
         <Route path="/demo2" element={<Demo2 />} />
         {/* <TodoList todos={todos}/> */}
@@ -53,6 +55,7 @@ export default function App() {
         <Route path="/controlledCom" element={<ControlledComponent />} />
         <Route path="/welcome" element={<Welcome />} />
         <Route path="user/location" element={<Location/>}/>
+        <Route path="profile" element={<Profile/>}/>
       </Routes>
     </Router>
   );

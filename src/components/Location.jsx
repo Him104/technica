@@ -7,6 +7,8 @@ const Location = () => {
     <div>
       <h1>location component </h1>
 <p>Current URL : {location.pathname}</p>
+<p>Search : {location.search}</p>
+<p>Hash: {location.hash}</p>
 {location.state }
 
     </div>
