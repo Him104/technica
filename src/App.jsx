@@ -10,6 +10,7 @@ import Welcome from "./components/Welcome";
 import Location from "./components/Location";
 import Home from "./components/Home";
 import Profile from "./components/Profile";
+import Useeffect from "./components/Useeffect";
 export default function App() {
   //   const todos = [{id:1, task: 'Learn React', completed: false},
   //     {id:2, task: 'Build Project', completed: true},
@@ -56,6 +57,8 @@ export default function App() {
         <Route path="/welcome" element={<Welcome />} />
         <Route path="user/location" element={<Location/>}/>
         <Route path="profile" element={<Profile/>}/>
+        <Route path="data-fetching" element={<Useeffect/>}/>
+
       </Routes>
     </Router>
   );
