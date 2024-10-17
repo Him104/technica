@@ -11,6 +11,8 @@ import Location from "./components/Location";
 import Home from "./components/Home";
 import Profile from "./components/Profile";
 import Useeffect from "./components/Useeffect";
+import Sockets from "./components/Sockets";
+import SocketParent from "./components/SocketParent";
 export default function App() {
   //   const todos = [{id:1, task: 'Learn React', completed: false},
   //     {id:2, task: 'Build Project', completed: true},
@@ -58,6 +60,8 @@ export default function App() {
         <Route path="user/location" element={<Location/>}/>
         <Route path="profile" element={<Profile/>}/>
         <Route path="data-fetching" element={<Useeffect/>}/>
+        <Route path="sockets" element={<Sockets/>}/>
+        <Route path="socketsParent" element={<SocketParent/>}/>
 
       </Routes>
     </Router>
