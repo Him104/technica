@@ -22,3 +22,6 @@ React Lifecycle.
 1. ComponentDidMount (Runs after the component Mounts)  
 2. ComponentDidUpdate ( Runs after every render/update)
 3. ComponentWillUnmount (Cleanup before the component unmounts)
+
+
+useRef : is a hook that allows you to directly create a reference to a DOM element or a React element.
