@@ -13,7 +13,7 @@ import Profile from "./components/Profile";
 import Useeffect from "./components/Useeffect";
 import Sockets from "./components/Sockets";
 import SocketParent from "./components/SocketParent";
-import Focus from "./components/Focus";
+import DomManipulationWithUseEffect from "./components/Focus";
 export default function App() {
   //   const todos = [{id:1, task: 'Learn React', completed: false},
   //     {id:2, task: 'Build Project', completed: true},
@@ -63,7 +63,7 @@ export default function App() {
         <Route path="data-fetching" element={<Useeffect/>}/>
         <Route path="sockets" element={<Sockets/>}/>
         <Route path="socketsParent" element={<SocketParent/>}/>
-        <Route path="focus" element={<Focus/>}/>
+        <Route path="focus" element={<DomManipulationWithUseEffect/>}/>
 
       </Routes>
     </Router>
