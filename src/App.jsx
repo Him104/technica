@@ -14,6 +14,7 @@ import Useeffect from "./components/Useeffect";
 import Sockets from "./components/Sockets";
 import SocketParent from "./components/SocketParent";
 import DomManipulationWithUseEffect from "./components/Focus";
+import Parent1 from "./components/Parent1";
 export default function App() {
   //   const todos = [{id:1, task: 'Learn React', completed: false},
   //     {id:2, task: 'Build Project', completed: true},
@@ -64,6 +65,7 @@ export default function App() {
         <Route path="sockets" element={<Sockets/>}/>
         <Route path="socketsParent" element={<SocketParent/>}/>
         <Route path="focus" element={<DomManipulationWithUseEffect/>}/>
+        <Route path="parent1" element={<Parent1/>}/>
 
       </Routes>
     </Router>
