@@ -25,3 +25,21 @@ React Lifecycle.
 
 
 useRef : is a hook that allows you to directly create a reference to a DOM element or a React element.
+
+useMemo : is a hook that helps optimize performance by memoizing the result of a function.
+
+
+Question : Why Use useMemo ?
+
+Solution : whenever a component re-renders, all functions and calculations inside it run again
+
+
+Syntax of useMemo
+
+const memoizedValue = useMemo(() => {
+    return value;
+}, [dependencies]);
+
+memoizedValue : The result stored and reused.
+
+dependencies : Array of values that trigger recalculation when they change.

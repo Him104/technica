@@ -15,6 +15,7 @@ import Sockets from "./components/Sockets";
 import SocketParent from "./components/SocketParent";
 import DomManipulationWithUseEffect from "./components/Focus";
 import Parent1 from "./components/Parent1";
+import Products from "./components/Products";
 export default function App() {
   //   const todos = [{id:1, task: 'Learn React', completed: false},
   //     {id:2, task: 'Build Project', completed: true},
@@ -48,6 +49,9 @@ export default function App() {
           </li>
         </ul>
       </nav>
+
+
+
       <Routes>
         {/* <Header title="My to-do List"/> */}
         <Route path="/" element={<Home />} />
@@ -66,6 +70,7 @@ export default function App() {
         <Route path="socketsParent" element={<SocketParent/>}/>
         <Route path="focus" element={<DomManipulationWithUseEffect/>}/>
         <Route path="parent1" element={<Parent1/>}/>
+        <Route path="products" element={<Products/>}/>
 
       </Routes>
     </Router>
